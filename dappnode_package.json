@@ -4,7 +4,6 @@
   "description": "ethereum-optimism.public.dappnode.eth",
   "type": "service",
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "chain": "ethereum",
   "contributors": [
     "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
   ],  

@@ -3,7 +3,7 @@ services:
   fraud-prover:
     build: ./build-fraud-prover
     image: "fraud-prover.ethereum-optimism.public.dappnode.eth:0.1.0"
-    restart: always
+    restart: unless-stopped
     environment:
       - >-
         L1_NODE_WEB3_URL=https://kovan.infura.io/v3/58e7402502274cbeb064bb49b1d8bb9e
@@ -16,10 +16,11 @@ services:
       - FROM_L2_TRANSACTION_INDEX=1
       - L2_BLOCK_OFFSET=1
     volumes:
-      - "data:/usr/src/app/wallet/"
+      - "fraud-prover:/usr/src/app/wallet/"
   verifier:
     build: ./build-verifier
     image: "verifier.ethereum-optimism.public.dappnode.eth:0.1.0"
+    restart: unless-stopped
     volumes:
       - "verifier:/root/.ethereum:rw"
     environment:
@@ -61,5 +62,5 @@ services:
         ROLLUP_STATE_DUMP_PATH=https://raw.githubusercontent.com/ethereum-optimism/regenesis/master/kovan/1.json
       - ROLLUP_DIFFDB_CACHE=1
 volumes:
-  data: {}
+  fraud-prover: {}
   verifier: {}

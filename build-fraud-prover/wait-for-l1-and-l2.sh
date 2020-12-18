@@ -28,7 +28,7 @@ until [ $(curl --silent -X POST \
     --data "{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"${L1_WALLET_ADDRESS}\",\"latest\"],\"id\":1}" \
     "$L1_NODE_WEB3_URL" | jq .result | tr -d "\"" ) != "0x0" ]
 do
-  echo "Will wait unitl ${L1_WALLET_ADDRESS} has enough balance. you can claim some kETH here: https://kovan.faucet.enjin.io/ or ask in gitter https://gitter.im/kovan-testnet/faucet"
+  echo "Will wait unitl ${L1_WALLET_ADDRESS} has enough balance. You can claim some kETH here: https://kovan.faucet.enjin.io/ or ask in gitter https://gitter.im/kovan-testnet/faucet"
   sleep 10
 done
 
