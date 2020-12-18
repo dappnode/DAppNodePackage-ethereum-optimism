@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     environment:
       - >-
-        L1_NODE_WEB3_URL=https://kovan.infura.io/v3/58e7402502274cbeb064bb49b1d8bb9e
+        L1_NODE_WEB3_URL=https://kovan.infura.io/v3/469bae0eae844dcbba31cee0356ecfd2
       - NO_TIMEOUT=true
       - "L2_NODE_WEB3_URL=http://verifier:8045"
       - L1_START_OFFSET=22610276
@@ -33,7 +33,7 @@ services:
       - RPC_ADDR=verifier
       - RPC_CORS_DOMAIN=*
       - RPC_VHOSTS=*
-      - RPC_PORT=8545
+      - RPC_PORT=8045
       - WS=true
       - WS_ADDR=0.0.0.0
       - WS_PORT=8046
@@ -50,7 +50,7 @@ services:
       - ETH1_CONFIRMATION_DEPTH=10
       - ETH1_CHAINID=42
       - ETH1_NETWORKID=42
-      - "ETH1_HTTP=https://kovan.infura.io/v3/58e7402502274cbeb064bb49b1d8bb9e"
+      - "ETH1_HTTP=https://kovan.infura.io/v3/469bae0eae844dcbba31cee0356ecfd2"
       - ETH1_CTC_DEPLOYMENT_HEIGHT=22610276
       - ETH1_ADDRESS_RESOLVER_ADDRESS=0x661e90a3CD113456C1a1f09b1bD3fB5FCCF496fd
       - TARGET_GAS_LIMIT=9000000

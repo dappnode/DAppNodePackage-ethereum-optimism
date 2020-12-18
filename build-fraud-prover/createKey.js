@@ -1,5 +1,5 @@
 const {Wallet} = require('@ethersproject/wallet')
-const fs = require('fs/promises')
+const fs = require('fs').promises;
 const path = require('path')
 
 const KEY = 'L1_WALLET_KEY'
