@@ -1,5 +1,16 @@
-Go to [prysm-pyrmont.dappnode](http://prysm-pyrmont.dappnode)
+### Configuration steps:
 
-If you want to have the complete dashboard with all the metrics you will have to install [metrics-tools](http://my.dappnode/#/installer/metrics-tools.dnp.dappnode.eth)
+In order for the package to work, you will need to fund your wallet.
 
-Grafana dashboard thanks to amazing work of [metanull-operator](https://github.com/metanull-operator/eth2-grafana)
+The wallet is created automatically by the package, and to fund it you can follow the steps below:
+
+1. Go to the [Logs](http://my.dappnode/#/packages/ethereum-optimism.public.dappnode.eth/logs) of the package and select the "Fraud Prover" service. You should see a message with your wallet's address:
+"Not enough balance in wallet `0x123ABC...` Please, obtain some KovanETH in this faucet: https://kovan.faucet.enjin.io/ or ask in gitter https://gitter.im/kovan-testnet/faucet"
+
+2. Copy the wallet's address and visit [this faucet](https://kovan.faucet.enjin.io/) or [this gitter server](https://gitter.im/kovan-testnet/faucet).
+
+3. Once the wallet has been funded, the package will detect it automatically and will start the verification and proving of the Optimism testnet!
+
+You are ready!
+
+For more information about Optimism visit their [website](https://optimism.io/)!
