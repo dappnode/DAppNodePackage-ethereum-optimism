@@ -1,8 +1,14 @@
 version: "2"
 fields:
-  - title: Kovan Endpoint
+  - title: Fraud Prover Endpoint
     id: kovan-fraud-prover-endpoint
-    description: The Ethereum RPC server that will be used by the verifier. These must be set to Ethereum nodes that have synced the Kovan testnet.
+    description: >-
+      The Ethereum node that will be used by the fraud prover. 
+
+      It must be a Kovan testnet node.
+
+      
+      You can run your own Kovan node with DAppNode and select it with `http://kovan.dappnode:8545`. [Install link](http://my.dappnode/#/installer/kovan.dnp.dappnode.eth)
     target:
       type: environment
       name: L1_NODE_WEB3_URL
@@ -10,7 +16,15 @@ fields:
     required: true
   - title: Kovan Endpoint
     id: kovan-verifier-endpoint
-    description: The Ethereum RPC server that will be used by the fraud prover. These must be set to Ethereum nodes that have synced the Kovan testnet.
+    description: >-
+      The Ethereum node that will be used by the verifier. 
+
+      It must be a Kovan testnet node.
+
+      **It can be the same as the endpoint used by the Fraud Prover above**
+
+      
+      You can run your own Kovan node with DAppNode and select it with `http://kovan.dappnode:8545`. [Install link](http://my.dappnode/#/installer/kovan.dnp.dappnode.eth)
     target:
       type: environment
       name: ETH1_HTTP

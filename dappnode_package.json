@@ -1,31 +1,30 @@
 {
-  "name": "ethereum-optimism.public.dappnode.eth",
-  "version": "0.1.0",
-  "description": "ethereum-optimism.public.dappnode.eth",
-  "type": "service",
-  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "contributors": [
-    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
-  ],  
-  "categories": [
-    "Blockchain"
-  ],
-  "links": {
-    "endpoint": "http://ethereum-optimism.public.dappnode:8045",
-    "medium": "https://optimismpbc.medium.com/"
-  },
-  "license": "GPL-3.0",
-  "backup": [
-    {
-      "name": "wallet",
-      "path": "/usr/src/app/wallet/"
+    "name": "ethereum-optimism.public.dappnode.eth",
+    "version": "0.1.0",
+    "shortDescription": "Testnet verifier and fraud-prover for Optimism",
+    "description": "Optimism is an Optimistic Rollup for Ethereum scalability. Its security depends on verifiers to detect and prove fraud when it occurs. This package contains the verifier and the prover to detect fraud on the Kovan Testnet.",
+    "type": "service",
+    "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+    "contributors": [
+        "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
+    ],
+    "categories": [
+        "Blockchain"
+    ],
+    "links": {
+        "endpoint": "http://ethereum-optimism.public.dappnode:8045",
+        "medium": "https://optimismpbc.medium.com/"
+    },
+    "license": "GPL-3.0",
+    "backup": [{
+        "name": "wallet",
+        "path": "/usr/src/app/wallet/"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dappnode/DAppNodePackage-ethereum-optimism.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dappnode/DAppNodePackage-ethereum-optimism/issues"
     }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dappnode/DAppNodePackage-ethereum-optimism.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-ethereum-optimism/issues"
-  }
 }
