@@ -1,0 +1,32 @@
+{
+  "name": "ethereum-optimism.public.dappnode.eth",
+  "version": "0.1.0",
+  "description": "ethereum-optimism.public.dappnode.eth",
+  "type": "service",
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "chain": "ethereum",
+  "contributors": [
+    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
+  ],  
+  "categories": [
+    "Blockchain"
+  ],
+  "links": {
+    "endpoint": "http://ethereum-optimism.public.dappnode:8045",
+    "medium": "https://optimismpbc.medium.com/"
+  },
+  "license": "GPL-3.0",
+  "backup": [
+    {
+      "name": "wallet",
+      "path": "/usr/src/app/wallet/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dappnode/DAppNodePackage-ethereum-optimism.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dappnode/DAppNodePackage-ethereum-optimism/issues"
+  }
+}
